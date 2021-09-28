@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+h1{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 1rem;
+    color: #289487;
+}
+
+#container{
+    margin-top: 4rem;
+    line-height: 5rem;
+    display: flex;
+}
+
+#row1{
+    color: #96938e;
+    margin-left: 4vw;
+}
+
+#row1 p{
+    margin-bottom: 1rem;
+}
+
+#row2{
+    display: grid;
+    width: 80vw;
+    margin-left: 4vw;
+}
+
+#bass,#drum,#floor,#snare{
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: .5rem;
+}
+
+#button{
+    min-width: 10%;
+    border-radius: .5rem;
+    transition: .1s ease;
+}
+
+#button:hover{
+    transform: scale(1.1,1.1);
+}
+
+.bass{
+    background-color: #a332bc;
+    opacity: .5;
+}
+
+.drum{
+    background-color: #4b347e;
+    opacity: .5;
+}
+
+.floor{
+    background-color: #a05f8e;
+    opacity: .5;
+}
+
+.snare{
+    background-color: #924165;
+    opacity: .5;
+}
+
+
+.selected{
+    opacity: 1;
+}
+
+#play{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#playButton{
+    background: linear-gradient( 
+        158deg, rgb(18 85 102) -31%, rgb(139 81 117) 50%, rgba(111,37,157,1) 161%);
+    border: 0;
+    border-radius: .2rem;
+    padding: 1rem 4rem 1rem 4rem;
+    box-shadow: 0 0 8px #2b188a;
+    transition: .5s ease;
+    cursor: pointer;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #96938e;
+}
+
+#playButton:active{
+    transform: scale(.9,.9);
+    box-shadow: 0;
+}
+
+.current{
+    transform: scale(1.1,1.04);
+}
+
+#tempo{
+    cursor: pointer;
+    background: #3f395c;
+    -webkit-appearance: none;
+    border-radius: 0.3rem;
+    height: .2rem;
+}
+
+span{
+    color: #787273e6;
+}
+

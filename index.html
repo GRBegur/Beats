@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img-premium.flaticon.com/png/512/2995/premium/2995101.png?token=exp=1632812395~hmac=eeb988577bac73df732d27e83b5caf47" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <title>Custom Beats</title>
+</head>
+<body>
+    <h1>Play around making custom beats</h1>
+    <h2>Select tiles to enable those intervals</h2>
+
+    <div id="container">
+        <div id="row1">
+            <p>Bass Drum</p>
+            <p>Hihat Reso</p>
+            <p>Kick Dry</p>
+            <p>Snare</p>
+        </div>
+        <div id="row2">
+            <div id="bass"></div>
+            <div id="drum"></div>
+            <div id="floor"></div>
+            <div id="snare"></div>
+        </div>
+    </div>
+
+    <div id="play">
+        <button onclick="playStop(this)" id="playButton">PLAY</button>
+        <input type="range" name="tempo" id="tempo" value="60" max="300" min="60"> <span id="slidevalue">60</span><span>bpm</span>
+
+    </div>
+
+    <audio id="bsound" src="./music/bass.wav" ></audio>
+    <audio id="dsound" src="./music/hihat-reso.wav"></audio>
+    <audio id="fsound" src="./music/kick-dry.wav"></audio>
+    <audio id="ssound" src="./music/snare-808.wav"></audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
